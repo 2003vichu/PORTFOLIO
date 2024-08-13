@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <img src="https://img.pikbest.com/wp/202405/freelancer-3d-illustration-of-a-laptop-wielding-freelance-developer_9844724.jpg!w700wp"
+            alt="">
+        <ul>
+            <li><a href="#banner"><i class="fa-solid fa-home"></i>HOME</a></li>
+            <li><a href="#about"><i class="fa-regular fa-address-card"></i>ABOUT</a></li>
+            <li><a href="#project"><i class="fa-solid fa-laptop"></i>PROJEECTS</a></li>
+            <li><a href="#services"><i class="fa-solid fa-hands-holding-circle"></i>SERVICES</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-phone"></i>CONTACT</a></li>
+        </ul>
+    </header>
+    <div id="banner">
+        <img src="https://www.creative-tim.com/blog/content/images/size/w960/2022/01/which-development-job-is-right-for-you.jpg"
+            alt="">
+        <div class="quote">
+            <p>welcome to my portfolio 🙌</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="row">
+            <div class="col">
+                <img src="images.jpeg" alt="" width="350px">
+            </div>
+            <div class="col">
+                <h1>I am vishnu</h1>
+            </div>
+        </div>
+
+
+
+        <h2>ABOUT ME</h2><br><br><br><br>
+        <div id="about">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, laudantium. Soluta voluptatem quisquam
+                perferendis quod qui impedit! Veniam ducimus velit minima ut earum, rem alias iure minus, quia
+                perspiciatis voluptas.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ab culpa. Veritatis ipsam enim porro
+                modi rem minus molestiae delectus, ullam, explicabo facere doloribus quasi. Eaque blanditiis tempora
+                molestias ipsam?
+                Totam, quam reiciendis ipsam nisi sit dolores repudiandae quidem, beatae eaque dolor error corrupti
+                vitae modi aliquam magnam ut maiores. Placeat debitis aliquid iusto aut illo temporibus reiciendis qui
+                quia?
+                Sed et deleniti, placeat repellendus animi ipsam optio voluptatem ut unde sequi voluptates, maxime nulla
+                numquam facere rerum soluta provident dolore vitae, quam voluptas blanditiis quod tempore autem!
+                Dignissimos, aspernatur?
+                Animi odit aperiam vitae asperiores inventore ad recusandae, earum eligendi quas quibusdam repudiandae
+                aspernatur beatae corrupti impedit sit commodi tempore architecto possimus, vero ex quos eius nesciunt
+                perferendis labore! Unde?
+                Non voluptates, eligendi nam earum necessitatibus blanditiis delectus dolorum eaque, veniam enim
+                pariatur fuga! Voluptas nesciunt repellendus voluptatum, suscipit aspernatur repellat incidunt iure,
+                reiciendis in pariatur facere voluptatibus assumenda iusto!
+                Doloribus voluptatibus, error natus assumenda libero fugit explicabo? Suscipit sed vel saepe consectetur
+                recusandae ex velit cum rem perferendis! Rem culpa perferendis praesentium ducimus, autem totam amet.
+                Quis, quas aliquam!
+                Laboriosam autem veritatis facilis ducimus a. Quis, praesentium pariatur veritatis, reprehenderit
+                officiis cupiditate ex nam commodi velit, repellat officia quam deserunt. Impedit, necessitatibus? Quo,
+                voluptatem amet totam saepe libero voluptate?
+                Placeat tenetur maiores quasi ducimus unde sed inventore dolorem pariatur voluptas? Delectus, deleniti
+                saepe aliquid asperiores cum mollitia pariatur commodi similique eius architecto expedita ut accusamus
+                esse quos nulla quod!
+                Iste nam quibusdam recusandae possimus est facilis voluptas necessitatibus dolore impedit doloremque!
+                At, aliquid illo sapiente libero distinctio non tenetur modi odio in architecto, quae deleniti eius
+                expedita assumenda hic!
+                Natus voluptates, consequatur ratione consectetur exercitationem laudantium, asperiores sit deserunt id
+                expedita blanditiis aspernatur dolorem facere, hic quas rem consequuntur qui similique! Iusto tenetur
+                blanditiis dolor unde debitis, quos odio?
+                Eligendi odio ratione sit quasi! Iusto asperiores, ea laborum at necessitatibus illum dolore in dolorum
+                ratione expedita repellat labore consectetur provident optio autem aliquam harum nam officia saepe ut
+                illo.
+            </p>
+            <img src="./download.jpeg" alt="">
+        </div>
+    </section><br><br><br><br>
+
+    <section>
+        <div id="project">
+            <h1>MY PROJECTS</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="img1.png" alt="Paris" style="width:300px;height:200px">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Paris</h2>
+                                <p>What an amazing city</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="img1.png" alt="Paris" style="width:300px;height:200px">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Paris</h2>
+                                <p>What an amazing city</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="img1.png" alt="Paris" style="width:300px;height:200px">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Paris</h2>
+                                <p>What an amazing city</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="img1.png" alt="Paris" style="width:300px;height:200px">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Paris</h2>
+                                <p>What an amazing city</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="img1.png" alt="Paris" style="width:300px;height:200px">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Paris</h2>
+                                <p>What an amazing city</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="img1.png" alt="Paris" style="width:300px;height:200px">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>Paris</h2>
+                                <p>What an amazing city</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section>
+
+        <div id="services">
+            <h1>SERVICES</h1>
+            <div class="s-row">
+                <div class="s-col">
+                    <img src="img1.png" width="100%" height="150px" alt="">
+                    <h3>web development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, hic consequuntur perferendis
+                        aperiam quod nostrum, dolores ad quaerat obcaecati ratione facere quae illum illo dicta dolore
+                        maiores natus, iste at.</p>
+                </div>
+                <div class="s-col">
+                    <img src="dwl.jpeg" width="100%" height="150px" alt="">
+                    <h3>web development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, hic consequuntur perferendis
+                        aperiam quod nostrum, dolores ad quaerat obcaecati ratione facere quae illum illo dicta dolore
+                        maiores natus, iste at.</p>
+                </div>
+            <div class="s-col">
+                <img src="download.jpeg" width="100%" height="150px" alt="">
+                <h3>web development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, hic consequuntur perferendis
+                    aperiam quod nostrum, dolores ad quaerat obcaecati ratione facere quae illum illo dicta dolore
+                    maiores natus, iste at.</p>
+            </div>
+            <div class="s-col">
+            <img src="img1.png" width="100%" height="150px" alt="">
+            <h3>web development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, hic consequuntur perferendis
+                aperiam quod nostrum, dolores ad quaerat obcaecati ratione facere quae illum illo dicta dolore
+                maiores natus, iste at.</p>
+        </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div id="contact">
+            <h2>contact me</h2>
+            <form action="">
+                <fieldset>
+                    <center>
+                        <label for=""></label>
+                        <input type="text" placeholder="entetr your name"><br><br>
+                        <label for=""></label>
+                        <input type="text" placeholder="Enter Your Email"><br><br>
+
+                        <label for=""></label>
+                        <textarea name="" id="" cols="25" rows="5" placeholder="enter the message"></textarea><br><br>
+
+                        <button>submit</button>
+                        <input type="button" value="" name="" id="">
+        </div>
+        </center>
+    </section>
+    </fieldset>
+
+</body>
+
+</html>
